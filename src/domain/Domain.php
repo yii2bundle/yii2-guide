@@ -19,10 +19,10 @@ class Domain extends \yii2lab\domain\Domain {
 				'project' => [
 					'driver' => Driver::FILE,
 					'owners' => [
-						'yii2lab',
+                        'yii2bundle',
+						/*'yii2lab',
 						'yii2module',
-						//'yii2woop',
-						'yii2guide',
+						'yii2guide',*/
 					],
 				],
 				'article' => Driver::FILE,
