@@ -3,7 +3,7 @@
 namespace yii2module\guide\domain;
 
 use yii2lab\domain\enums\Driver;
-use yii2lab\domain\services\ActiveBaseService;
+use yii2lab\domain\services\base\BaseActiveService;
 
 /**
  * Class Domain
@@ -29,7 +29,7 @@ class Domain extends \yii2lab\domain\Domain {
 				'chapter' => Driver::FILE,
 			],
 			'services' => [
-				'project' => ActiveBaseService::class,
+				'project' => BaseActiveService::class,
 				'article',
 				'chapter',
 			],

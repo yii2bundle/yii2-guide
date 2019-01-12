@@ -5,7 +5,7 @@ namespace yii2module\guide\domain\services;
 use Yii;
 use yii\data\ArrayDataProvider;
 use yii2lab\domain\BaseEntity;
-use yii2lab\domain\services\ActiveBaseService;
+use yii2lab\domain\services\base\BaseActiveService;
 use yii2module\guide\domain\enums\GuidePermissionEnum;
 use yii2module\guide\domain\repositories\file\ArticleRepository;
 
@@ -16,7 +16,7 @@ use yii2module\guide\domain\repositories\file\ArticleRepository;
  *
  * @property ArticleRepository $repository
  */
-class ArticleService extends ActiveBaseService {
+class ArticleService extends BaseActiveService {
 	
 	public function search($body) {
 		$collection = $this->repository->search($body);
