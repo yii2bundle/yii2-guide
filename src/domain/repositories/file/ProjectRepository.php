@@ -3,10 +3,10 @@
 namespace yii2module\guide\domain\repositories\file;
 
 use yii\helpers\ArrayHelper;
-use yii2lab\domain\repositories\ActiveDiscRepository;
+use yii2lab\extension\arrayTools\repositories\base\BaseActiveDiscRepository;
 use yii2module\guide\domain\helpers\ProjectHelper;
 
-class ProjectRepository extends ActiveDiscRepository {
+class ProjectRepository extends BaseActiveDiscRepository {
 
 	public $owners = [];
 	public $table = 'project';
